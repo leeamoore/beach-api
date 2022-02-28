@@ -1,0 +1,38 @@
+type Query {
+    beach(
+        id: ID!
+    ): Beach
+    beaches: [Beach!]!
+}
+
+type Mutation {
+    addComment(
+        beachId: ID!, 
+        comment: String!
+    ): Boolean
+    deleteComment(
+        commentId: ID!
+    ): Boolean
+    editComment(
+        commentId: ID!, 
+        comment: String!
+    ): Boolean
+    rateBeach(
+        beachId: ID!, 
+        rating: Int!
+    ): Boolean
+}
+
+type Beach {
+    id: ID!
+    name: String!
+    rating: Float
+    comments: [Comment!]!
+    imageUrls: [String!]!
+}
+
+type Comment {
+    id: ID!
+    comment: String!
+    userId: String!
+}

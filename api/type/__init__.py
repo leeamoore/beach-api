@@ -1,0 +1,1 @@
+from .beach import Beach

@@ -1,0 +1,24 @@
+[tool.poetry]
+name = "beach-api"
+version = "0.1.0"
+description = ""
+authors = ["Lee Moore <75574039+leeamoore@users.noreply.github.com>"]
+
+[tool.poetry.dependencies]
+python = "^3.9"
+strawberry-graphql = "^0.98.2"
+uvicorn = "^0.17.5"
+asyncpg = "^0.25.0"
+starlette = "<=0.17"
+websockets = "^10.2"
+
+[tool.poetry.dev-dependencies]
+isort = "^5.10.1"
+black = "^22.1.0"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.isort]
+profile = "black"
