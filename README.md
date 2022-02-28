@@ -26,6 +26,7 @@ In schema.graphql is the GraphQL schema for this project. You can use http reque
 - [X] Get query endpoints working.
 - [ ] Get mutation endpoints working.
 - [ ] Design user-specific functionality.
+- [ ] Work on unit test coverage of the application.
 - [ ] Review application characteristis and update design.
 - [ ] Improve PostgreSQL query performance.
 - [ ] Design cloud architecture.
